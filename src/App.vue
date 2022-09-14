@@ -1,14 +1,16 @@
 <script setup lang="ts">
 // import * as echarts from 'echarts'
 // import { provide } from 'vue'
-// provide('echarts', echarts)
-
+// provide('echarts', echarts) 
+// import layout from './layout/layout.vue';
 </script>
 
 <template>
-  <RouterView />
+  <!-- <Layout v-if="$route.meta.layout" />
+  <RouterView v-else /> -->
+  <RouterView/>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>

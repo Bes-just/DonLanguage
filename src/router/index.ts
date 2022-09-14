@@ -2,15 +2,23 @@ import {createRouter,createWebHistory,RouteRecordRaw} from 'vue-router'
 
 const routes:RouteRecordRaw[] = [
     {
-        path:'/',
+        path:'/login',
         name:'login',
-        component:()=>import('../views/login/login.vue')
+        component:()=>import('../views/login/login.vue'),
+        meta:{
+            title:'登陆',
+            layout:false
+        }
     },
     {
-        path:'/layout',
+        path:'/',
         name:'layout',
         component:()=>import('../layout/layout.vue'),
         redirect:'/home',
+        meta:{
+            title:'首页',
+            layout:true
+        },
         children:[
             {
                 path:'/user',
